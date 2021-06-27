@@ -20,10 +20,10 @@ import java.util.List;
 /**
  * Created by junyi on 26/6/21
  */
-public class MyFragment extends ListFragment {
+public class CourseListFragment extends ListFragment {
     List<Course> courses = new CourseData().courseList();
 
-    public MyFragment() {
+    public CourseListFragment() {
 
     }
 
@@ -42,7 +42,7 @@ public class MyFragment extends ListFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.my_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_courselist, container, false);
         return view;
     }
 }

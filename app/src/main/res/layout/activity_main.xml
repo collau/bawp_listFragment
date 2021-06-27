@@ -6,6 +6,13 @@
     android:id="@+id/myContainer"
     tools:context=".MainActivity">
 
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.fishnco.listfragmentsample.CourseListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_courselist"/>
+
 
 
 </FrameLayout>

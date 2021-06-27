@@ -4,14 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/myContainer"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/myText"
-        android:text="Large Screen"
-        android:textSize="48sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.fishnco.listfragmentsample.CourseListFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_courselist"/>
+
+    <FrameLayout
+        android:id="@+id/detailContainer"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
