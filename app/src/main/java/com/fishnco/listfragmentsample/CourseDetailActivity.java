@@ -27,6 +27,7 @@ public class CourseDetailActivity extends AppCompatActivity {
             CourseDetailFragment courseDetailFragment = new CourseDetailFragment();
             courseDetailFragment.setArguments(extra);
             FragmentManager fragmentManager = getSupportFragmentManager();
+            // add Fragment inside detailContainer
             fragmentManager.beginTransaction()
                     .add(R.id.detailContainer, courseDetailFragment)
                     .commit();

@@ -52,7 +52,9 @@ public class MainActivity extends AppCompatActivity implements CourseListFragmen
 
             fm.beginTransaction().replace(R.id.detailContainer, courseDetailFragment)
                     .commit();
-        } else {
+        }
+        // if !isTwoPane, clicking on the item will open CourseDetailActivity
+        else {
             Intent intent = new Intent(MainActivity.this, CourseDetailActivity.class);
             intent.putExtra("course_id", position);
             startActivity(intent);
